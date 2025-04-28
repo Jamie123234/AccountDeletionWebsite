@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slip-Scan - Account Deletion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles if needed, though Tailwind is preferred */
+        body {
+            font-family: 'Inter', sans-serif; /* Default font */
+        }
+        /* Ensure footer stays at the bottom */
+        .min-h-screen-footer {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .content-grow {
+            flex-grow: 1;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 min-h-screen-footer">
+
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-bold">Slip-Scan</h1>
+            <p class="text-sm">Developed by AppCraft Studios (Pty) Ltd</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6 content-grow">
+        <div class="bg-white p-8 rounded-lg shadow-lg max-w-2xl mx-auto">
+            <h2 class="text-xl font-semibold mb-4 text-gray-700">Account Deletion Request</h2>
+
+            <p class="mb-4">
+                To request the deletion of your Slip-Scan account and associated data, please send an email to our support team.
+            </p>
+
+            <p class="mb-4">
+                Click the button below to open your email client with the necessary details pre-filled, or manually compose an email with the following information:
+            </p>
+
+            <ul class="list-disc list-inside mb-6 bg-gray-50 p-4 rounded-md border border-gray-200">
+                <li><strong>To:</strong> support@appcraftstudios.com</li>
+                <li><strong>Subject:</strong> Account Deletion Request</li>
+                <li class="mt-1"><strong>Body:</strong> Please state the email address or username associated with the Slip-Scan account you wish to delete.</li>
+            </ul>
+
+            <a href="mailto:support@appcraftstudios.com?subject=Account%20Deletion%20Request&body=Please%20delete%20my%20Slip-Scan%20account%20associated%20with%20the%20following%20email/username%3A%20%5BYour%20Email/Username%20Here%5D"
+               class="inline-block bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out text-center w-full sm:w-auto">
+                Request Account Deletion via Email
+            </a>
+
+            <hr class="my-8 border-gray-300">
+
+            <h3 class="text-lg font-semibold mb-3 text-gray-700">Data Deletion Information</h3>
+            <p class="mb-4">
+                Upon successful processing of your account deletion request, the following data associated with your account will be permanently deleted:
+            </p>
+            <ul class="list-disc list-inside mb-4 space-y-1">
+                <li>User profile information (e.g., name, email)</li>
+                <li>Saved application settings and preferences</li>
+                <li>All scanned invoice data</li>
+                <li>Any generated reports</li>
+            </ul>
+            <p class="font-medium text-gray-600">
+                Please note: There is no data retention period. Once deleted, your data cannot be recovered.
+            </p>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+        <div class="container mx-auto">
+            &copy; <span id="currentYear"></span> AppCraft Studios (Pty) Ltd. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Simple script to set the current year in the footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
